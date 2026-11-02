@@ -1,0 +1,14 @@
+[project]
+name = "pdfqa"
+version = "0.1.0"
+description = "Ask questions about a PDF and get answers that cite page numbers (LangChain + Chroma + Streamlit)."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
